@@ -2,7 +2,7 @@
 
 ## Part 1 - Intents and activities
 
- 1) 
+ 1) Miwok native language translator app, using intents for multiscreens.
 
 ## Part 2 - Arrays, lists, loops & classes
 
