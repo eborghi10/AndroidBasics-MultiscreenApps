@@ -15,8 +15,12 @@
  */
 package com.example.android.miwok;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,5 +30,61 @@ public class MainActivity extends AppCompatActivity {
 
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
+
+        /**
+         * Programmatically setting an OnClickListener allows you to control a button's behavior
+         * from somewhere other than its host activity. This will become very relevant when we
+         * learn about Fragments, which are basically mini activities, allowing you to build
+         * reusable collections of views with their own lifecycle, which can then be assembled into
+         * activities.
+         *
+         * Fragments always need to use OnClickListeners to control their buttons, since they're
+         * not Activities, and won't be searched for listeners defined in onClick.
+         *
+         */
+
+        // Find the view that show the numbers category
+        TextView numbers = (TextView) findViewById(R.id.numbers);
+        TextView family = (TextView) findViewById(R.id.family);
+        TextView colors = (TextView) findViewById(R.id.colors);
+        TextView phrases = (TextView) findViewById(R.id.phrases);
+
+        // Attach a click listener on that view
+        numbers.setOnClickListener(new View.OnClickListener() {
+            // OnClickListener abstract method OnClick()
+            @Override
+            public void onClick(View view) {
+                // Custom behavior when the event happens:
+
+                // Create a new intent to open the {@Link NumbersActivity}
+                Intent numbersIntent = new Intent(MainActivity.this, NumbersActivity.class);
+                // Start the new activity
+                startActivity(numbersIntent);
+            }
+        });
+
+        family.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent familyIntent = new Intent(MainActivity.this, FamilyActivity.class);
+                startActivity(familyIntent);
+            }
+        });
+
+        colors.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent colorsIntent = new Intent(MainActivity.this, ColorsActivity.class);
+                startActivity(colorsIntent);
+            }
+        });
+
+        phrases.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
+                startActivity(phrasesIntent);
+            }
+        });
     }
 }
