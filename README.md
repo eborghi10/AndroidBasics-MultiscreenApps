@@ -6,7 +6,7 @@
 
 ## Part 2 - Arrays, lists, loops & classes
 
- 1) Manage arrayLists (and not arrays) to display lists on the screen. Continuing with the Miwok app.
+ 1) Manage arrayLists (and not arrays) to display lists on the screen. Continue improving with the Miwok app with _ArrayAdapter_ and _ListView_.
 
 ## Part 3 - Images and Visual Polish
 
