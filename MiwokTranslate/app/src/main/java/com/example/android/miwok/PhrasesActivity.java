@@ -16,15 +16,15 @@ public class PhrasesActivity extends AppCompatActivity {
         // Create an ARRAY LIST of words using my custom class "Word"
         ArrayList<Word> words = new ArrayList<>();
 
-        words.add(new Word("Where are you going?", "minto wuksus"));
-        words.add(new Word("What is your name?", "tinne oyaase'ne"));
-        words.add(new Word("My name is...", "oyaaset..."));
-        words.add(new Word("How are you feeling?", "michekses?"));
-        words.add(new Word("I'm feeling good.", "kuchi achit"));
-        words.add(new Word("Are you coming?","eenes'aa?"));
-        words.add(new Word("Yes, I'm coming.","hee'eenem"));
-        words.add(new Word("Let's go.","eenem"));
-        words.add(new Word("Come here.","enni'nem"));
+        words.add(new Word("Where are you going?", "Куда ты идешь?", "Wohin gehst du?"));
+        words.add(new Word("What is your name?", "Как вас зовут?", "Wie heißt du?"));
+        words.add(new Word("My name is...", "Меня зовут...", "Ich heiße..."));
+        words.add(new Word("How are you feeling?", "как ты себя чувствуешь?", "Wie fühlst du dich?"));
+        words.add(new Word("I'm feeling good.", "мне хорошо.", "Ich fühle mich gut."));
+        words.add(new Word("Are you coming?","ты идешь?", "Kommst du?"));
+        words.add(new Word("Yes, I'm coming.","Да, я иду.", "Ja, ich komme."));
+        words.add(new Word("Let's go.","Пойдем.", "Lass uns gehen."));
+        words.add(new Word("Come here.","Иди сюда.", "Komm her."));
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s.

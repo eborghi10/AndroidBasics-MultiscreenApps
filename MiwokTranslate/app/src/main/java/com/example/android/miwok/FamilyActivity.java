@@ -16,16 +16,16 @@ public class FamilyActivity extends AppCompatActivity {
         // Create an ARRAY LIST of words using my custom class "Word"
         ArrayList<Word> words = new ArrayList<>();
 
-        words.add(new Word("father", "epe"));
-        words.add(new Word("mother", "eta"));
-        words.add(new Word("son", "angsi"));
-        words.add(new Word("daughter", "tune"));
-        words.add(new Word("older brother", "taachi"));
-        words.add(new Word("younger brother","chalitti"));
-        words.add(new Word("older sister","tete"));
-        words.add(new Word("younger sister","kolliti"));
-        words.add(new Word("grandmother", "ama"));
-        words.add(new Word("grandfather","paapa"));
+        words.add(new Word("father", "отец", "Vatter"));
+        words.add(new Word("mother", "мама", "Mutter"));
+        words.add(new Word("son", "сын", "Sohn"));
+        words.add(new Word("daughter", "дочь", "Tochter"));
+        words.add(new Word("older brother", "старший брат", "älterer Bruder"));
+        words.add(new Word("younger brother","младший брат", "jüngerer Bruder"));
+        words.add(new Word("older sister","старшая сестра", "ältere Schwester"));
+        words.add(new Word("younger sister","младшая сестра", "jüngere Schwester"));
+        words.add(new Word("grandmother", "бабушка", "Oma"));
+        words.add(new Word("grandfather","дед", "Großvater"));
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s.

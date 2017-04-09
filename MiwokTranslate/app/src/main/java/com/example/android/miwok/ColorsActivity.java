@@ -16,14 +16,14 @@ public class ColorsActivity extends AppCompatActivity {
         // Create an ARRAY LIST of words using my custom class "Word"
         ArrayList<Word> words = new ArrayList<>();
 
-        words.add(new Word("red", "wetetti"));
-        words.add(new Word("green", "chokokki"));
-        words.add(new Word("brown", "takaakki"));
-        words.add(new Word("gray", "topoppi"));
-        words.add(new Word("black", "kulilli"));
-        words.add(new Word("white","kelelli"));
-        words.add(new Word("dusty yellow","topiise"));
-        words.add(new Word("mustard yellow","chiwiite"));
+        words.add(new Word("red", "красный","rot"));
+        words.add(new Word("green", "зеленый","grün"));
+        words.add(new Word("brown", "коричневый","braun"));
+        words.add(new Word("gray", "серый","grau"));
+        words.add(new Word("black", "черный","schwarz"));
+        words.add(new Word("white","белое","Weiß"));
+        words.add(new Word("dusty yellow","пыльно-желтый","staubiges Gelb"));
+        words.add(new Word("mustard yellow","горчично-желтый", "senfgelb"));
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s.

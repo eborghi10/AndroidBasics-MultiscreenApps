@@ -20,16 +20,16 @@ public class NumbersActivity extends AppCompatActivity {
         // Create an ARRAY LIST of words using my custom class "Word"
         ArrayList<Word> words = new ArrayList<>();
 
-        words.add(new Word("one", "lutti"));
-        words.add(new Word("two", "otiiko"));
-        words.add(new Word("three", "tolookosu"));
-        words.add(new Word("four", "oyyisa"));
-        words.add(new Word("five", "massokka"));
-        words.add(new Word("six","temmokka"));
-        words.add(new Word("seven","kenekaku"));
-        words.add(new Word("eight","kawinta"));
-        words.add(new Word("nine","wo'e"));
-        words.add(new Word("ten","na'aacha"));
+        words.add(new Word("one", "один", "eins"));
+        words.add(new Word("two", "два", "zwei"));
+        words.add(new Word("three", "три", "drei"));
+        words.add(new Word("four", "четыре", "vier"));
+        words.add(new Word("five", "пять", "fünf"));
+        words.add(new Word("six","шесть", "sechs"));
+        words.add(new Word("seven","семь", "sieben"));
+        words.add(new Word("eight","восемь", "acht"));
+        words.add(new Word("nine","девять", "neun"));
+        words.add(new Word("ten","десять", "zehn"));
 
         /*
         // Logging messages with Android Monitor

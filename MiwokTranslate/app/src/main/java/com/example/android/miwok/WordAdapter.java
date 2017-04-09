@@ -68,8 +68,11 @@ public class WordAdapter extends ArrayAdapter<Word> {
         // set this text on the default TextView
         defaultTextView.setText(currentWord.getDefaultTranslation());
 
-        TextView miwokTextView = (TextView) listItemView.findViewById(R.id.miwok_text_view);
-        miwokTextView.setText(currentWord.getMiwokTranslation());
+        TextView russianTextView = (TextView) listItemView.findViewById(R.id.russian_text_view);
+        russianTextView.setText(currentWord.getRussianTranslation());
+
+        TextView germanTextView = (TextView) listItemView.findViewById(R.id.german_text_view);
+        germanTextView.setText(currentWord.getmGermanTranslation());
 
         // Return the whole list item layout (containing 2 TextViews)
         // so that it can be shown in the ListView

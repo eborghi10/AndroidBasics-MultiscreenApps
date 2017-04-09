@@ -10,22 +10,25 @@ public class Word {
 
     // Default translation for the word
     private String mDefaultTranslation;
-    // Miwok translation for the word
-    private String mMiwokTranslation;
+    // Translations for the word
+    private String mRussianTranslation;
+    private String mGermanTranslation;
 
-    ArrayList<String> default_words;
-    ArrayList<String> miwok_words;
-
-    public Word(String defaultTranslation, String miwokTranslation) {
+    public Word(String defaultTranslation, String russianTranslation, String germanTranslation) {
         mDefaultTranslation = defaultTranslation;
-        mMiwokTranslation = miwokTranslation;
+        mRussianTranslation = russianTranslation;
+        mGermanTranslation = germanTranslation;
     }
 
     public String getDefaultTranslation() {
         return mDefaultTranslation;
     }
 
-    public String getMiwokTranslation() {
-        return mMiwokTranslation;
+    public String getRussianTranslation() {
+        return mRussianTranslation;
+    }
+
+    public String getmGermanTranslation() {
+        return mGermanTranslation;
     }
 }
