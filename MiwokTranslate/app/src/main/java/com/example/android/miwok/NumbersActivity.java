@@ -63,8 +63,8 @@ public class NumbersActivity extends AppCompatActivity {
         //ArrayAdapter<String> itemsAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, words);
 
         // I'll use my custom layout file with my custom class "Word"
-        ArrayAdapter<Word> itemsAdapter =
-                new ArrayAdapter<>(this, R.layout.list_item, words);
+        //ArrayAdapter<Word> itemsAdapter = new ArrayAdapter<>(this, R.layout.list_item, words);
+        WordAdapter adapter = new WordAdapter(this, words);
 
         /**
          * Creates a ListView with items to display them on the ListView layout.
@@ -79,6 +79,7 @@ public class NumbersActivity extends AppCompatActivity {
         // {@link ListView} will display list items for each word in the list of words.
         // Do this by calling the setAdapter method on the {@link ListView} object and pass in
         // 1 argument, which is the {@link ArrayAdapter} with the variable name itemsAdapter.
-        listView.setAdapter(itemsAdapter);
+        //listView.setAdapter(itemsAdapter);
+        listView.setAdapter(adapter);
     }
 }
