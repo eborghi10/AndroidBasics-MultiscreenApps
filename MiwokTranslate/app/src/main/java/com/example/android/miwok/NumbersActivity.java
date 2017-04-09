@@ -20,16 +20,16 @@ public class NumbersActivity extends AppCompatActivity {
         // Create an ARRAY LIST of words using my custom class "Word"
         ArrayList<Word> words = new ArrayList<>();
 
-        words.add(new Word("one", "один", "eins"));
-        words.add(new Word("two", "два", "zwei"));
-        words.add(new Word("three", "три", "drei"));
-        words.add(new Word("four", "четыре", "vier"));
-        words.add(new Word("five", "пять", "fünf"));
-        words.add(new Word("six","шесть", "sechs"));
-        words.add(new Word("seven","семь", "sieben"));
-        words.add(new Word("eight","восемь", "acht"));
-        words.add(new Word("nine","девять", "neun"));
-        words.add(new Word("ten","десять", "zehn"));
+        words.add(new Word("one", "один", "eins", R.drawable.number_one));
+        words.add(new Word("two", "два", "zwei", R.drawable.number_two));
+        words.add(new Word("three", "три", "drei", R.drawable.number_three));
+        words.add(new Word("four", "четыре", "vier", R.drawable.number_four));
+        words.add(new Word("five", "пять", "fünf", R.drawable.number_five));
+        words.add(new Word("six","шесть", "sechs", R.drawable.number_six));
+        words.add(new Word("seven","семь", "sieben", R.drawable.number_seven));
+        words.add(new Word("eight","восемь", "acht", R.drawable.number_eight));
+        words.add(new Word("nine","девять", "neun", R.drawable.number_nine));
+        words.add(new Word("ten","десять", "zehn", R.drawable.number_ten));
 
         /*
         // Logging messages with Android Monitor
@@ -64,7 +64,7 @@ public class NumbersActivity extends AppCompatActivity {
 
         // I'll use my custom layout file with my custom class "Word"
         //ArrayAdapter<Word> itemsAdapter = new ArrayAdapter<>(this, R.layout.list_item, words);
-        WordAdapter adapter = new WordAdapter(this, words);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_numbers);
 
         /**
          * Creates a ListView with items to display them on the ListView layout.
