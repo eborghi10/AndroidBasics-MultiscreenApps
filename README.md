@@ -10,11 +10,13 @@
 
 ## Part 3 - Images and Visual Polish
 
- 1) 
+ 1) Improve the appearance with images and other visual modifications.
 
 ## Part 4 - Activity lifecycle and audio playback
 
- 1) 
+ 1) Create a new project (_MusicPlayer_) to test how to play music.
+
+ 2) //
 
 ## Part 5 - Fragments
 
