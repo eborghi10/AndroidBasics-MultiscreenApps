@@ -19,7 +19,7 @@
     <LinearLayout
         android:id="@+id/text_container"
         android:orientation="vertical"
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="@dimen/list_item_height"
         tools:background="@color/category_numbers"
         android:gravity="center_vertical"
@@ -45,6 +45,25 @@
             style="@style/WordItemStyle"
             tools:text="default english"
             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="88dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            style="@style/PlayButtonStyle"
+            android:src="@mipmap/ic_play_russian"
+            tools:background="@color/category_numbers"
+            android:id="@+id/play_russian"/>
+
+        <ImageButton
+            style="@style/PlayButtonStyle"
+            android:src="@mipmap/ic_play_german"
+            tools:background="@color/category_numbers"
+            android:id="@+id/play_german"/>
 
     </LinearLayout>
 
