@@ -14,7 +14,6 @@
         android:id="@+id/playButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:onClick="play_cb"
         />
 
     <Button
@@ -26,7 +25,6 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/playButton"
         android:layout_marginTop="20dp"
-        android:onClick="stop_cb"
         />
 
 </RelativeLayout>
