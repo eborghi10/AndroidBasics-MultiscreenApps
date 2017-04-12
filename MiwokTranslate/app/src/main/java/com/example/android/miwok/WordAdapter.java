@@ -1,13 +1,16 @@
 package com.example.android.miwok;
 
 import android.app.Activity;
+import android.media.Image;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -100,6 +103,12 @@ public class WordAdapter extends ArrayAdapter<Word> {
         int color = ContextCompat.getColor(getContext(), mColorResourceID);
         // Set the background color for the textContainer view
         textContainer.setBackgroundColor(color);
+
+        ImageButton russianPlayButton = (ImageButton) listItemView.findViewById(R.id.play_russian);
+        russianPlayButton.setBackgroundColor(color);
+
+        ImageButton germanPlayButton = (ImageButton) listItemView.findViewById(R.id.play_german);
+        germanPlayButton.setBackgroundColor(color);
 
         // Return the whole list item layout (containing 2 TextViews)
         // so that it can be shown in the ListView

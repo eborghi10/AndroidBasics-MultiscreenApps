@@ -18,6 +18,12 @@
 
  2) //
 
+ https://www.google.com.ar/search?hl=en&q=russian+pronuntiation&gws_rd=cr&ei=WMTqWKqPOMu5wgTxpKKwCg#hl=en&q=russian+pronunciation+words+audio
+
+ https://www.google.com.ar/search?hl=en&q=german+pronuntiation&gws_rd=cr&ei=X8TqWODDEIGHwQT96quwAg#hl=en&q=german+pronunciation+words+audio
+
+ https://www.howtopronounce.com/german/kartoffel/
+
 ## Part 5 - Fragments
 
  1) 
