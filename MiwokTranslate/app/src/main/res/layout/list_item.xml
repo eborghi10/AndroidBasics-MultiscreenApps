@@ -30,6 +30,7 @@
         <TextView
             android:id="@+id/russian_text_view"
             style="@style/WordItemStyle"
+            android:textColor="#F44336"
             android:textStyle="bold"
             tools:text="russian"
             />
@@ -37,6 +38,7 @@
         <TextView
             android:id="@+id/german_text_view"
             style="@style/WordItemStyle"
+            android:textColor="#009688"
             android:textStyle="bold"
             tools:text="german"
             />
@@ -44,6 +46,7 @@
         <TextView
             android:id="@+id/default_text_view"
             style="@style/WordItemStyle"
+            android:textColor="@android:color/black"
             tools:text="default english"
             />
 

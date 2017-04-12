@@ -50,8 +50,7 @@ public class FamilyActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                MediaPlayer mediaPlayer = new MediaPlayer();
-                mediaPlayer.create(this, R.raw.de_father);
+                MediaPlayer mediaPlayer = MediaPlayer.create(FamilyActivity.this, R.raw.de_father);
                 mediaPlayer.start();
             }
         });
