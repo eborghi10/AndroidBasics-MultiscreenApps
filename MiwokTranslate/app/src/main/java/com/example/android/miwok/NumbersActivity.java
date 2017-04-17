@@ -1,5 +1,6 @@
 package com.example.android.miwok;
 
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,6 +13,8 @@ import java.util.ArrayList;
 
 public class NumbersActivity extends AppCompatActivity {
 
+    private MediaPlayer mMediaPlayer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,16 +23,16 @@ public class NumbersActivity extends AppCompatActivity {
         // Create an ARRAY LIST of words using my custom class "Word"
         ArrayList<Word> words = new ArrayList<>();
 
-        words.add(new Word("one", "один", "eins", R.drawable.number_one));
-        words.add(new Word("two", "два", "zwei", R.drawable.number_two));
-        words.add(new Word("three", "три", "drei", R.drawable.number_three));
-        words.add(new Word("four", "четыре", "vier", R.drawable.number_four));
-        words.add(new Word("five", "пять", "fünf", R.drawable.number_five));
-        words.add(new Word("six","шесть", "sechs", R.drawable.number_six));
-        words.add(new Word("seven","семь", "sieben", R.drawable.number_seven));
-        words.add(new Word("eight","восемь", "acht", R.drawable.number_eight));
-        words.add(new Word("nine","девять", "neun", R.drawable.number_nine));
-        words.add(new Word("ten","десять", "zehn", R.drawable.number_ten));
+        words.add(new Word("one", "один", "eins", R.drawable.number_one, R.raw.ru_one, R.raw.de_one));
+        words.add(new Word("two", "два", "zwei", R.drawable.number_two, R.raw.ru_two, R.raw.de_two));
+        words.add(new Word("three", "три", "drei", R.drawable.number_three, R.raw.ru_three, R.raw.de_three));
+        words.add(new Word("four", "четыре", "vier", R.drawable.number_four, R.raw.ru_four, R.raw.de_four));
+        words.add(new Word("five", "пять", "fünf", R.drawable.number_five, R.raw.ru_five, R.raw.de_five));
+        words.add(new Word("six","шесть", "sechs", R.drawable.number_six, R.raw.ru_six, R.raw.de_six));
+        words.add(new Word("seven","семь", "sieben", R.drawable.number_seven, R.raw.ru_seven, R.raw.de_seven));
+        words.add(new Word("eight","восемь", "acht", R.drawable.number_eight, R.raw.ru_eight, R.raw.de_eight));
+        words.add(new Word("nine","девять", "neun", R.drawable.number_nine, R.raw.ru_nine, R.raw.de_nine));
+        words.add(new Word("ten","десять", "zehn", R.drawable.number_ten, R.raw.ru_ten, R.raw.de_ten));
 
         /*
         // Logging messages with Android Monitor

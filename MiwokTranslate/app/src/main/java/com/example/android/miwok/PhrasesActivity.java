@@ -16,15 +16,15 @@ public class PhrasesActivity extends AppCompatActivity {
         // Create an ARRAY LIST of words using my custom class "Word"
         ArrayList<Word> words = new ArrayList<>();
 
-        words.add(new Word("Where are you going?", "Куда ты идешь?", "Wohin gehst du?"));
-        words.add(new Word("What is your name?", "Как вас зовут?", "Wie heißt du?"));
-        words.add(new Word("My name is...", "Меня зовут...", "Ich heiße..."));
-        words.add(new Word("How are you feeling?", "как ты себя чувствуешь?", "Wie fühlst du dich?"));
-        words.add(new Word("I'm feeling good.", "мне хорошо.", "Ich fühle mich gut."));
-        words.add(new Word("Are you coming?","ты идешь?", "Kommst du?"));
-        words.add(new Word("Yes, I'm coming.","Да, я иду.", "Ja, ich komme."));
-        words.add(new Word("Let's go.","Пойдем.", "Lass uns gehen."));
-        words.add(new Word("Come here.","Иди сюда.", "Komm her."));
+        words.add(new Word("Where are you going?", "Куда ты идешь?", "Wohin gehst du?", R.raw.ru_where_are_you_going, R.raw.de_where_are_you_going));
+        words.add(new Word("What is your name?", "Как вас зовут?", "Wie heißt du?", R.raw.ru_what_is_your_name, R.raw.de_what_is_your_name));
+        words.add(new Word("My name is...", "Меня зовут...", "Ich heiße...", R.raw.ru_my_name_is, R.raw.de_my_name_is));
+        words.add(new Word("How are you feeling?", "как ты себя чувствуешь?", "Wie fühlst du dich?", R.raw.ru_how_are_you_feeling, R.raw.de_how_are_you_feeling));
+        words.add(new Word("I'm feeling good.", "мне хорошо.", "Ich fühle mich gut.", R.raw.ru_i_am_feeling_good, R.raw.de_i_am_feeling_good));
+        words.add(new Word("Are you coming?","ты идешь?", "Kommst du?", R.raw.ru_are_you_coming, R.raw.de_are_you_coming));
+        words.add(new Word("Yes, I'm coming.","Да, я иду.", "Ja, ich komme.", R.raw.ru_yes_i_am_coming, R.raw.de_yes_i_am_coming));
+        words.add(new Word("Let's go.","Пойдем.", "Gehen wir.", R.raw.ru_lets_go, R.raw.de_lets_go));
+        words.add(new Word("Come here.","Иди сюда.", "Komm her.", R.raw.ru_come_here, R.raw.de_come_here));
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s.

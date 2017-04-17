@@ -13,6 +13,8 @@ public class Word {
     // Translations for the word
     private String mRussianTranslation;
     private String mGermanTranslation;
+    private int mRussianAudio;
+    private int mGermanAudio;
 
     private int mImageResourceId = NO_IMAGE_PROVIDED;
 
@@ -20,16 +22,19 @@ public class Word {
     private static final int NO_IMAGE_PROVIDED = -1;
 
     public Word(String defaultTranslation, String russianTranslation,
-                String germanTranslation, int imageID) {
+                String germanTranslation, int imageID, int russianAudio, int germanAudio) {
 
-        this(defaultTranslation, russianTranslation, germanTranslation);
+        this(defaultTranslation, russianTranslation, germanTranslation, russianAudio, germanAudio);
         mImageResourceId = imageID;
     }
 
-    public Word(String defaultTranslation, String russianTranslation, String germanTranslation) {
+    public Word(String defaultTranslation, String russianTranslation, String germanTranslation,
+                int russianAudio, int germanAudio) {
         mDefaultTranslation = defaultTranslation;
         mRussianTranslation = russianTranslation;
         mGermanTranslation = germanTranslation;
+        mRussianAudio = russianAudio;
+        mGermanAudio = germanAudio;
     }
 
     public String getDefaultTranslation() {
@@ -46,6 +51,14 @@ public class Word {
 
     public int getImageResourceId() {
         return mImageResourceId;
+    }
+
+    public int getRussianAudio() {
+        return mRussianAudio;
+    }
+
+    public int getGermanAudio() {
+        return mGermanAudio;
     }
 
     /**
